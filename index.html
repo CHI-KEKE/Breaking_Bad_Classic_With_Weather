@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Bad Classic</title>
+    <link rel="icon" type="image/png" href="images/walt.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id = "particles-js">
+        <div class="container">
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder = "Where are you?">
+                <button class = "fa-solid fa-magnifying-glass"></button>
+            </div>
+
+            <div class="not-found">
+                <img src="images/monster_b.png" alt="">
+                <p>Are you building your new country? :/</p>
+            </div>
+
+            <div class="weather-box">
+                <img src="" alt="">
+                <p class="temperature"></p>
+                <p class="description"></p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class = "fa-solid fa-water"></i>
+                    <div class="text">
+                        <span></span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class = "fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span></span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quote-container" id="quote-container">
+            <!-- Quote -->
+            <div class="quote-text">
+                <!-- <i class="fas fa-quote-left"></i> -->
+                <!-- <img id = "walt" src="120.png" alt=""> -->
+                <span id="quote"></span>
+            </div>
+            <!-- Author -->
+            <div class="quote-author">
+                <span id="author"></span>
+            </div>
+            <!-- Button -->
+            <div class="button-container">
+                <button class="twitter-button" id="twitter" title ="Tweet This!">
+                    <i class="fab fa-twitter"></i>
+                </button>
+                <button id="new-quote"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+        </div>
+        <div class="loader" id="loader"></div>
+    <!-- Script -->
+    <script src = "breakingbad.js"></script>
+    <script src = "particles.js"></script>
+    <script src="script.js"></script>
+    <script src = "config.js"></script>
+
+
+</body>
+</html>

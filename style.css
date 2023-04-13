@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  overflow:hidden;
+  min-height: 100vh;
+  /* background-color: #fbf3e7;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23035007' fill-opacity='0.35' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");  color: black; */
+  font-family:'Alkatra', cursive;
+  font-weight:700;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#particles-js{
+  background: #333;
+}
+
+
+.container{
+  position:fixed;
+  top:2vh;
+  width: 70vh;
+  height: 105px;
+  background:beige;
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 18px;
+  transition: 0.6s ease-out;
+  opacity: 0.9;
+}
+
+.search-box{
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.search-box input{
+  color: #06283D;
+  width: 80%;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 32px;
+  border: none;
+  outline:none;
+  background-color: beige;
+}
+
+.search-box input::placeholder{
+  font-size: 20px;
+  font-weight: 500;
+  color:#06283D;
+  text-transform:capitalize;
+}
+
+.search-box button{
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
+    color:#06283D;
+    background: #DFF6FF;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search-box button:hover{
+  color:#fff;
+  background: #06283D;
+}
+
+.search-box i{
+  position: absolute;
+  color:#06283D;
+  font-size: 28px;
+}
+
+.weather-box{
+  text-align:center;
+}
+
+.weather-box img{
+  width: 25%;
+  margin-top: 5px;
+}
+
+.weather-box .temperature{
+  position: relative;
+  color: #06283D;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-left: -16px;
+}
+
+.weather .temperature span{
+  position: absolute;
+  margin-left: 4px;
+  font-size: 1.5rem;
+}
+
+.weather-box .description{
+  margin-top:-35px;
+  color: #06283D;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.weather-details{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -35px;
+}
+
+.weather-details .humidity, .weather-details .wind{
+  display:flex;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+}
+
+.weather-details .humidity{
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+.weather-details .wind{
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+.weather-details i{
+  color: #06283D;
+  font-size: 26px;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+
+.weather-details span{
+  color:#06283D;
+  font-size:22px;
+  font-weight: 500;
+}
+
+.weather-details p{
+  color: #06283D;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.not-found{
+  width: 100%;
+  text-align: center;
+  scale:0;
+  opacity: 0;
+  display:none;
+}
+
+.not-found img{
+  width: 40%;
+}
+
+.not-found p{
+  color: #06283D;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.weather-box, .weather-details{
+  scale:0;
+  opacity:0;
+}
+
+.fadeIn{
+  animation:  0.5s fadeIn forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+  to{
+    scale:1;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.quote-container{
+  position:fixed;
+  bottom:8vh;
+  width : auto;
+  max-width:900px;
+  padding : 20px 30px;
+  border-radius:10px;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+
+}
+
+.quote-text {
+  font-size: 1.3rem;
+}
+
+.long-quote {
+  font-size : 1.5rem;
+}
+
+.fa-quote-left{
+  font-size : 2rem
+}
+
+.quote-author{
+  margin-top: 18px;
+  font-size:1.5rem;
+  font-weight:400;
+  font-style:italic;
+  color:olive
+}
+
+.button-container {
+  margin-top:15px;
+  display:flex;
+  justify-content:space-between;
+}
+
+button{
+  cursor:pointer;
+  font-size:0.8rem;
+  height:1.5rem;
+  border:none;
+  border-radius:10px;
+  color:white;
+  background-color: #333333;
+  outline: none;
+  padding:0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121,121,121,0.65);
+}
+
+button:hover{
+  filter: brightness(110%);
+}
+
+button:active{
+  transform: translate(0,0.3rem);
+  box-shadow:0 0.1rem rgba(255,255,255,0.65);
+}
+
+.twitter-button:hover{
+  color:#38a1f3
+}
+
+.fa-twitter{
+  font-size:0.8rem;
+}
+
+.loader {
+  position: fixed;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #333; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+/* 
+#walt{
+  top:100px;
+} */
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/* Media Query: Tablet or smaller */
+@media screen and (max-width: 1000px){
+  .quote-container{
+    margin: auto 10px
+  }
+  .quote-text{
+    font-size:2.5rem
+  }
+}
