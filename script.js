@@ -18,7 +18,7 @@ const error404 = document.querySelector('.not-found');
 ///////////weather APP/////////////////////////////////////////////////////////
 
 search.addEventListener('click',() =>{
-    const APIkey = APIKEY;
+    const APIkey = '051c88fa6bb8acd9c0842bad760f2795';
     const city = document.querySelector('.search-box input').value
 
     if(city ==='') return;
@@ -83,12 +83,7 @@ search.addEventListener('click',() =>{
 
 
 
-
-//Define apiQuotes as Array
-// let apiQuotes = [];
-
 //Show New Quotes/////////////////////////////////////////////////////
-//we can also use localQuotes by replacing apiQuotes to LocalQuotes
 function newQuote() {
   loading();
   //get random quote
@@ -108,17 +103,6 @@ function newQuote() {
 
 newQuoteBtn.addEventListener('click',newQuote);
 
-
-//Get Quotes Form API////////////////////////////////////////////////
-// async function getQuotes() {
-//   loading();
-//   const apiUrl = "https://type.fit/api/quotes";
-//   try {
-//     const response = await fetch(apiUrl);
-//     apiQuotes = await response.json();
-//     newQuote();
-//   } catch (error) {}
-// }
 
 //Tweet Quote!///////////////////////////////////////////////////////
 function tweetQuote(){
