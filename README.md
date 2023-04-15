@@ -1,24 +1,24 @@
 # Breaking_Bad_Classic_With_Weather
 
-### This is a simple APP made by using multiple online resources
+## Intro
+This is a simple APP made by using multiple online resources
+<br>
+<br>
+## Build By
+- HTML💀
+- CSS🎨
+- JS⚙
+<br><br><br><br>
+## Attribute
+- Breaking-Bad-quotes API : https://github.com/shevabam/breaking-bad-quotes
+- APP : https://github.com/AsmrProg-YT/100-days-of-javascript/tree/master/Day%20%2310%20-%20Weather%20App
+- Weather API : https://openweathermap.org/api/    
+- ICONS : https://www.freepik.com/ 
+- Icon Designer: terdpongvector, user5954771/Freepik
+- Quotes Generator : https://github.com/zero-to-mastery/javascript20-projects
+- Particle.js: https://github.com/VincentGarreau/particles.js
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Breaking-Bad-quotes API : https://github.com/shevabam/breaking-bad-quotes
-<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weather APP : https://github.com/AsmrProg-YT/100-days-of-javascript/tree/master/Day%20%2310%20-%20Weather%20App
-<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weather API : https://openweathermap.org/api/    
-<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICONS : https://www.freepik.com/   Designed by : terdpongvector, user5954771/Freepik
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quotes Generator : https://github.com/zero-to-mastery/javascript20-projects
-<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Particle.js: https://github.com/VincentGarreau/particles.js
-
-### Live Demo
+## Live Demo
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🎈[Demo](https://chi-keke.github.io/Breaking_Bad_Classic_With_Weather/)🎈
