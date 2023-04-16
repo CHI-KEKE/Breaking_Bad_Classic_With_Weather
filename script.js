@@ -20,12 +20,13 @@ const error404 = document.querySelector('.not-found');
 search.addEventListener('click',() =>{
     const APIkey = '051c88fa6bb8acd9c0842bad760f2795';
     const city = document.querySelector('.search-box input').value
-
+    // if not enter thing, just do nothing
     if(city ==='') return;
-
+    //fetch the data from weather API
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIkey}`
     ).then(response => response.json()).then(json => {
+        //if not found
         if (json.cod === '404'){
             container.style.height = '350px';
             weatherBox.style.display = 'none';
@@ -34,7 +35,7 @@ search.addEventListener('click',() =>{
             error404.classList.add('fadeIn');
             return;
         }
-
+        //otherwise
         error404.style.display = 'none';
         error404.classList.remove('fadeIn');
 
@@ -44,7 +45,7 @@ search.addEventListener('click',() =>{
         const wind = document.querySelector('.weather-details .wind span');
         const humidity = document.querySelector('.weather-details .humidity span')
 
-
+        //return weather image depends on the searching result
         switch (json.weather[0].main) {
           case "Clear":
             image.src = "images/clear.png";
@@ -65,7 +66,7 @@ search.addEventListener('click',() =>{
           default:
             image.src = '';
         }
-
+        
         temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
         description.innerHTML = `${json.weather[0].description}`;
         humidity.innerHTML = `${json.main.humidity}%`;
@@ -125,9 +126,9 @@ function complete(){
 }
 
 ///////////////On Load!!!!//////////////////////////////////
-// getQuotes();
+
 newQuote();
-// loading()
+////////////particlejs file reference//////////////////////
 particlesJS(
   "particles-js",
 
