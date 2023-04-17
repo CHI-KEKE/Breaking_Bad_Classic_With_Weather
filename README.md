@@ -1,7 +1,7 @@
 # Breaking_Bad_Classic_With_Weather
 
 ## Intro
-I created this simple app by drawing inspiration from the work of MattCSmith on his course and AsmrProg(on YouTube). Their coding skills and projects inspired me to practice my own coding skills and create something.
+This is a simple app based on HTML, CSS, JS and Weather API & Breaking Bad Quote API.
 <br>
 <br>
 ![image](https://user-images.githubusercontent.com/113175990/231826822-bf2bbc48-3f5c-4cad-97b4-17dff447ad69.png)
